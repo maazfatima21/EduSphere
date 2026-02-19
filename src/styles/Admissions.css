@@ -1,0 +1,566 @@
+.admission-container {
+  font-family: "Inter", sans-serif;
+  background: #ffffff;
+}
+
+.admission-title,
+.dates-title {
+  font-family: "Playfair Display", serif;
+  font-size: 34px;
+  color: #413131;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.admission-hero {
+  min-height: 70vh;
+  background: linear-gradient(135deg,
+      rgba(0, 0, 0, 0.679),
+      rgba(0, 0, 0, 0.547)
+    ),
+    url("/images/admission-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 8%;
+}
+
+.admission-hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.admission-hero p {
+  max-width: 520px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.admission-highlights {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  padding: 100px 8%;
+}
+
+.highlight-card {
+  background: #413131;
+  color: #fff;
+  padding: 30px 28px;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  text-align: left;
+}
+
+.highlight-card span {
+  font-size: 14px;
+  letter-spacing: 0.4px;
+}
+
+.highlight-card:hover {
+  transform: translateY(-6px) scale(1.04);
+}
+
+.highlight-icon {
+  font-size: 34px;
+  min-height: 40px;
+}
+
+.admission-programs-fees {
+  background: #f8f8f8;
+  padding: 60px 8%;
+}
+
+.program-fee-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+}
+
+.program-fee-card {
+  background: #ffffff;
+  padding: 35px 25px;
+  border-radius: 4px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.412);
+  transition: 0.3s ease;
+}
+
+.program-fee-card:hover {
+  transform: translateY(-8px);
+}
+
+.program-fee-card h3 {
+  color: #413131;
+  margin-bottom: 12px;
+}
+
+.program-fee-card .price {
+  font-weight: 600;
+  color: #5f4646;
+}
+
+.program-fee-card span {
+  display: block;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #555;
+}
+
+.fees-note {
+  text-align: center;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.admission-eligibility {
+  background: #ffffff;
+  padding: 60px 8%;
+}
+
+.admission-list {
+  max-width: 600px;
+  margin: auto;
+  list-style: none;
+}
+
+.admission-list li {
+  padding: 12px 0;
+  font-size: 16px;
+  color: #413131;
+}
+
+.eligibility-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1100px;
+  margin: auto;
+  align-items: center;
+}
+
+.eligibility-left {
+  background: #f8f8f8;
+  border: 1px solid #41313126;
+  padding: 40px;
+  border-radius: 4px;
+}
+
+.international-inside {
+  margin-top: 40px;
+  background: #413131;
+  color: #fff;
+  padding: 35px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.international-inside h3 {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 12px;
+}
+
+.international-inside p{
+  opacity: 0.8;
+}
+
+.admission-process {
+  padding: 70px 6%;
+  color: #ffffff;
+  text-align: center;
+}
+
+.process-timeline {
+  position: relative;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 60px;
+  max-width: 1100px;
+  margin-inline: auto;
+}
+
+.timeline-step {
+  background: #413131;
+  padding: 40px 25px;
+  border-radius: 4px;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.timeline-step:hover {
+  transform: translateY(-10px);
+}
+
+.timeline-step::after {
+  content: "➜";
+  position: absolute;
+  right: -45px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  color: #413131;
+}
+
+.timeline-step:last-child::after {
+  display: none;
+}
+
+.step-circle {
+  width: 50px;
+  height: 50px;
+  background: #ffffff;
+  color: #413131;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 auto 20px;
+}
+
+.timeline-step h3 {
+  margin-bottom: 10px;
+}
+
+.timeline-step p {
+  opacity: 0.9;
+}
+
+.dates-testimonial-combo {
+  padding: 70px 8%;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 90px;
+  align-items: start;
+}
+
+.combo-images {
+  position: relative;
+  width: 600px;
+  height: 450px;
+  margin: auto;
+}
+
+.combo-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-one,
+.img-two,
+.img-three {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 40px 0 40px 0;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.img-one {
+  left: 0;
+  top: 0;
+  width: 280px;
+  height: 440px;
+}
+
+.img-two {
+  right: 0;
+  top: 0;
+  width: 280px;
+  height: 200px;
+}
+
+.img-three {
+  right: 0;
+  bottom: 0;
+  width: 280px;
+  height: 200px;
+}
+
+.combo-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.dates-list {
+  max-width: 500px;
+  margin: auto;
+  list-style: none;
+}
+
+.dates-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid #4131315b;
+  color: #413131;
+}
+
+.testimonials-section { 
+  padding: 20px 6% 120px;
+  text-align: center;
+}
+
+.testimonial-title {
+  font-family: "Playfair Display", serif;
+  font-size: 34px;
+  color: #413131;
+  margin-bottom: 60px;
+}
+
+.testimonial-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+}
+
+.arrow-btn {
+  background: #413131;
+  color: #fff;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.arrow-btn:hover {
+  transform: scale(1.2);
+}
+
+.arrow-btn.left {
+  margin-right: 10px;
+}
+
+.arrow-btn.right {
+  margin-left: 10px;
+}
+
+.paper-testimonial {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #4131313b;
+  width: 650px;
+  padding: 50px 40px 45px;
+  border-radius: 4px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  transform: rotate(-4deg);
+  transition: 0.4s ease;
+  z-index: 1;
+}
+
+.paper-testimonial::before,
+.paper-testimonial::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #ffffff;
+  border: 1px solid #4131313b;
+  border-radius: 4px;
+}
+
+.paper-testimonial::before {
+  transform: rotate(3deg);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  z-index: -1;
+}
+
+.paper-testimonial::after {
+  transform: rotate(-6deg);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  z-index: -2;
+}
+
+.paper-testimonial:hover {
+  transform: rotate(0deg) translateY(-6px);
+}
+
+.paper-pin {
+  width: 12px;
+  height: 38px;
+  background: #7b1a1a;
+  position: absolute;
+  top: -25px;
+  left: 45px;
+  border-radius: 4px;
+  transform: rotate(-25deg);
+}
+
+.paper-pin::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: #a02424;
+  border-radius: 50%;
+  position: absolute;
+  top: -12px;
+  left: -2px;
+}
+
+.paper-stars {
+  color: #5f4646;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.paper-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.paper-name {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  color: #413131;
+}
+
+.admission-cta {
+  background: linear-gradient(135deg,#413131,#413131e8);
+  color: #ffffff;
+  text-align: center;
+  padding: 100px 8%;
+}
+
+.admission-cta h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.admission-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 40px;
+  background: #ffffff;
+  color: #413131;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.admission-btn:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+  .admission-highlights,
+  .program-fee-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .eligibility-grid,
+  .dates-testimonial-combo {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .combo-images {
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+  }
+
+  .paper-testimonial {
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .admission-hero {
+    min-height: 60vh;
+    padding: 0 6%;
+  }
+
+  .admission-hero h1 { font-size: 2.2rem; }
+  .admission-hero p { font-size: 1rem; }
+
+  .process-timeline {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .timeline-step::after { display: none; }
+
+  .combo-images {
+    height: 360px;
+    padding: 0 10%;
+  }
+
+  .img-one,
+  .img-two,
+  .img-three {
+    width: 48%;
+    height: 48%;
+    position: static;
+    display: inline-block;
+    margin: 1%;
+  }
+
+  .testimonial-slider {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 9%;
+  }
+}
+
+@media (max-width: 480px) {
+  .admission-hero {
+    min-height: 50vh;
+    padding: 0 5%;
+  }
+
+  .admission-hero h1 { font-size: 1.8rem; }
+  .admission-hero p { font-size: 0.95rem; }
+
+  .admission-title,
+  .dates-title,
+  .testimonial-title {
+    font-size: 26px;
+  }
+
+  .highlight-card { padding: 10px 18px; }
+  .program-fee-card,
+  .timeline-step { padding: 25px 18px; }
+
+  .international-inside p { font-size: 14px; }
+
+  .combo-images {
+    display: grid;
+    gap: 25px;
+    height: auto;
+  }
+
+  .img-one,
+  .img-two,
+  .img-three {
+    width: 100%;
+    height: 200px;
+    position: static;
+  }
+
+  .paper-testimonial { padding: 40px 20px; }
+
+  .admission-cta h2 { font-size: 28px; }
+  .admission-btn { padding: 12px 28px; }
+}
