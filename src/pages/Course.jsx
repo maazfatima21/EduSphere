@@ -169,7 +169,7 @@ const Courses = () => {
             <p className="duration">{course.duration}</p>
             <p>{course.description}</p>
 
-            <Link to="/register" className="btn-primary">
+            <Link to="/contact" className="btn-primary">
               Apply Now
             </Link>
           </div>
@@ -177,7 +177,7 @@ const Courses = () => {
       </section>
 
       {/* ================= CTA ================= */}
-      <section className="courses-cta croll-animate animate-zoom">
+      <section className="courses-cta scroll-animate animate-zoom">
         <h2>Not Sure Which Program Fits You?</h2>
         <p>Contact our academic advisors for personalized guidance.</p>
 
