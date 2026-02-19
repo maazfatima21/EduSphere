@@ -31,7 +31,7 @@ The project emphasizes clean UI design, performance optimization, and scalable f
 
 ## 📂 Project Structure
 
-```bash
+```
 edusphere
 │
 ├── public/images
