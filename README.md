@@ -30,8 +30,8 @@ The project emphasizes clean UI design, performance optimization, and scalable f
 ---
 
 ## 📂 Project Structure
----
 
+```bash
 edusphere
 │
 ├── public/images
@@ -72,7 +72,7 @@ edusphere
 ├── vercel.json
 ├── package.json
 └── vite.config.js
-
+```
 ---
 
 ## ⚙️ Installation & Setup
